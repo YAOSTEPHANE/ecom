@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{margin: 0px; padding: 0px; box-sizing: border-box;}                                                                          
+
+body {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+}
+.container {
+  width: 90%; margin: auto;
+}
+
+header .top-strip{}
+
+
+
+.link:hover {
+  color: #FF5252;
+}
+
+.MuiBadge-badge{background-color: #FF5252 !important;
+}
