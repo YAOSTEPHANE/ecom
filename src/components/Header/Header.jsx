@@ -7,6 +7,13 @@ import IconButton from "@mui/material/IconButton";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa6";
 import Tooltip from "@mui/material/Tooltip";
+import Navigation from "../Header/Navigation/Navigation.jsx";
+
+
+
+
+
+
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -19,7 +26,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 const Header = () => {
   return (
-    <header>
+    <header className="bg-white">
       <div
         className="top-strip py-
         2 border-t-[1px] border-gray-250 border-b-[1px]"
@@ -56,7 +63,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="header py-3">
+      <div className="header py-4 border-b-[1px] border-gray-250">
         <div className="container flex items-center justify-between">
           <div className="col1 w-[25%]">
             <Link to={"/"}>
@@ -105,6 +112,8 @@ const Header = () => {
           </div>
         </div>
       </div>
+
+      <Navigation/>
     </header>
   );
 };

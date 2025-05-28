@@ -8,9 +8,11 @@
 body {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
+  background: #f5f0f0;
+  color: rgba(0, 0, 0, 0.9);
 }
 .container {
-  width: 90%; margin: auto;
+  width: 95%; margin: auto;
 }
 
 header .top-strip{}
@@ -22,4 +24,6 @@ header .top-strip{}
 }
 
 .MuiBadge-badge{background-color: #FF5252 !important;
+}
+nav ul button {text-transform: capitalize !important;
 }
