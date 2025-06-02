@@ -15,8 +15,6 @@ body {
   width: 95%; margin: auto;
 }
 
-header .top-strip{}
-
 
 
 .link:hover {
@@ -26,4 +24,8 @@ header .top-strip{}
 .MuiBadge-badge{background-color: #FF5252 !important;
 }
 nav ul button {text-transform: capitalize !important;
+}
+
+nav ul button:hover {
+  background: none !important;
 }
