@@ -5,6 +5,7 @@ import { TfiAngleDown } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 import { GoRocket } from "react-icons/go";
 import CategoryPanel from "./CategoryPanel";
+import "../Navigation/style.css"; // Assuming you have a CSS file for styles
 
 const Navigation = () => {
 
@@ -40,7 +41,7 @@ const Navigation = () => {
             <li className="list-none">
               <Link to="/" className="link transition text-[13px] font-[500]">
                 <Button className="link transition font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#FF5252]">
-                  Beauté
+                  Mode
                 </Button>
               </Link>
             </li>
@@ -82,7 +83,7 @@ const Navigation = () => {
             <li className="list-none">
               <Link to="/" className="link transition text-[13px] font-[500]">
                 <Button className="link transition font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#FF5252] ">
-                  Mode
+                  Beauté
                 </Button>
               </Link>
             </li>
