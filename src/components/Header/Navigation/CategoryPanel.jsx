@@ -4,11 +4,17 @@ import { IoCloseSharp } from "react-icons/io5";
 import Button from "@mui/material/Button";
 import { FaRegPlusSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const CategoryPanel = (props) => {
+  const [submenuIndex, setSubmenuIndex] = useState(null);
   const toggleDrawer = (newOpen) => () => {
     props.setIsOpenCatPanel(newOpen);
   };
+
+  const openSubmenu = (index) => {
+    setSubmenuIndex(index)
+  }
 
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" className="categoryPanel">
@@ -28,8 +34,11 @@ const CategoryPanel = (props) => {
               Mode
             </Button>
             </Link>
-            <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" />
-            <ul className="submenu absolute top-[100%] left-[0%] w-full pl-3">
+            <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openSubmenu(0) } />
+
+              {
+              submenuIndex === 0 && (
+                <ul className="submenu absolute top-[100%] left-[0%] w-full pl-3">
               <li className="list-none relative">
                 <Link to="/" className="w-full">
                 <Button className="w-full !text-left !justify-start px-3 !text-[rgba(0,0,0,0.8)]">
@@ -37,7 +46,7 @@ const CategoryPanel = (props) => {
                 </Button>
                 </Link>
                 <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" />
-                <ul className="submenu absolute top-[100%] left-[0%] w-full pl-3">
+                <ul className="inner_submenu absolute top-[100%] left-[0%] w-full pl-3">
                   <li className="list-none relative">
                     <Link
                       to="/"
@@ -46,7 +55,7 @@ const CategoryPanel = (props) => {
                       Chemises
                     </Link>
                   </li>
-                  <li className="list-none relative">
+                  <li className="list-none relative mb-1">
                     <Link
                       to="/"
                       className="w-full link w-full !text-left !justify-start px-3 transition !text-[14px]"
@@ -54,7 +63,7 @@ const CategoryPanel = (props) => {
                       pantalons
                     </Link>
                   </li>
-                  <li className="list-none relative">
+                  <li className="list-none relative mb-1">
                     <Link
                       to="/"
                       className="w-full link w-full !text-left !justify-start px-3 transition !text-[14px]"
@@ -62,7 +71,7 @@ const CategoryPanel = (props) => {
                       Robes
                     </Link>
                   </li>
-                  <li className="list-none relative">
+                  <li className="list-none relative mb-1">
                     <Link
                       to="/"
                       className="w-full link w-full !text-left !justify-start px-3 transition !text-[14px]"
@@ -70,7 +79,7 @@ const CategoryPanel = (props) => {
                       T-shirts
                     </Link>
                   </li>
-                  <li className="list-none relative">
+                  <li className="list-none relative mb-1">
                     <Link
                       to="/"
                       className="w-full link w-full !text-left !justify-start px-3 transition !text-[14px]"
@@ -78,7 +87,7 @@ const CategoryPanel = (props) => {
                       Vestes
                     </Link>
                   </li>
-                  <li className="list-none relative">
+                  <li className="list-none relative mb-1">
                     <Link
                       to="/"
                       className="w-full link w-full !text-left !justify-start px-3 transition !text-[14px]"
@@ -86,7 +95,7 @@ const CategoryPanel = (props) => {
                       Shorts
                     </Link>
                   </li>
-                  <li className="list-none relative">
+                  <li className="list-none relative mb-1">
                     <Link
                       to="/"
                       className="w-full link w-full !text-left !justify-start px-3 transition !text-[14px]"
@@ -94,7 +103,7 @@ const CategoryPanel = (props) => {
                       Jupes
                     </Link>
                   </li>
-                  <li className="list-none relative">
+                  <li className="list-none relative mb-1">
                     <Link
                       to="/"
                       className="w-full link w-full !text-left !justify-start px-3 transition !text-[14px]"
@@ -102,7 +111,7 @@ const CategoryPanel = (props) => {
                       Chapeaux
                     </Link>
                   </li>
-                  <li className="list-none relative">
+                  <li className="list-none relative mb-1">
                     <Link
                       to="/"
                       className="w-full link w-full !text-left !justify-start px-3 transition !text-[14px]"
@@ -110,7 +119,7 @@ const CategoryPanel = (props) => {
                       Ceintures
                     </Link>
                   </li>
-                  <li className="list-none relative">
+                  <li className="list-none relative mb-1">
                     <Link
                       to="/"
                       className="w-full link w-full !text-left !justify-start px-3 transition !text-[14px]"
@@ -118,7 +127,7 @@ const CategoryPanel = (props) => {
                       Gants
                     </Link>
                   </li>
-                  <li className="list-none relative">
+                  <li className="list-none relative mb-1">
                     <Link
                       to="/"
                       className="w-full link w-full !text-left !justify-start px-3 transition !text-[14px]"
@@ -129,6 +138,11 @@ const CategoryPanel = (props) => {
                 </ul>
               </li>
             </ul>
+              )
+              }
+
+
+            
           </li>
         </ul>
       </div>
