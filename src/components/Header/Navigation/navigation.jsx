@@ -48,7 +48,7 @@ const Navigation = () => {
             <li className="list-none">
               <Link to="/" className="link transition text-[13px] font-[500]">
                 <Button className="link transition font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#FF5252] ">
-                  Maison
+                  Electroniques
                 </Button>
               </Link>
             </li>
@@ -62,7 +62,7 @@ const Navigation = () => {
             <li className="list-none">
               <Link to="/" className="link transition text-[13px] font-[500]">
                 <Button className="link transition font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#FF5252] ">
-                  Electronique
+                  Maison
                 </Button>
               </Link>
             </li>
