@@ -1,15 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Search from "../../components/Recherche/Search.jsx";
+import Search from "../Recherche/Search";
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa6";
 import Tooltip from "@mui/material/Tooltip";
-import Navigation from "../Header/Navigation/Navigation.jsx";
-
-
+import Navigation from "../Header/Navigation/navigation";
 
 
 
@@ -113,7 +111,7 @@ const Header = () => {
         </div>
       </div>
 
-      <Navigation/>
+      <Navigation />
     </header>
   );
 };

@@ -15,7 +15,7 @@ const Homeslider = () => {
           className="sliderHome"
         >
           <SwiperSlide>
-            <div className="item rounded-lg overflow-hidden">
+            <div className="item rounded-[20px] overflow-hidden">
                 <img
               src="./src/images/banner 1.jpg"
               alt="banner slide"
@@ -24,39 +24,49 @@ const Homeslider = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
+            <div className="item rounded-[20px] overflow-hidden">
             <img
               src="./src/images/banner 2.jpg"
               alt="banner slide"
               className="w-full"
             />
+            </div>
           </SwiperSlide>
           <SwiperSlide>
+            <div className="item rounded-[20px] overflow-hidden">
             <img
               src="./src/images/banner 3.jpg"
               alt="banner slide"
               className="w-full"
             />
+            </div>
           </SwiperSlide>
           <SwiperSlide>
+            <div className="item rounded-[20px] overflow-hidden">
             <img
               src="./src/images/banner 4.jpg"
               alt="banner slide"
               className="w-full"
             />
+            </div>
           </SwiperSlide>
           <SwiperSlide>
+            <div className="item rounded-[20px] overflow-hidden">
             <img
               src="./src/images/banner 5.jpg"
               alt="banner slide"
               className="w-full"
             />
+            </div>
           </SwiperSlide>
           <SwiperSlide>
+            <div className="item rounded-[20px] overflow-hidden">
             <img
               src="./src/images/banner 6.jpg"
               alt="banner slide"
               className="w-full"
             />
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>
