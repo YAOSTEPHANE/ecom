@@ -15,6 +15,20 @@ body {
   color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff5252 !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #fff !important;
+}
+
+
+
 .container {
   width: 95%;
   margin: auto;
@@ -58,10 +72,7 @@ nav ul button:hover {
   font-size: 22px !important;
 }
 
-.homeCartslider {
-  overflow: inherit !important;
-}
-
+.homeCartslider{overflow: inherit !important;}
 .homeCartslider .swiper-button-prev,
 .homeCartslider .swiper-button-next {
   width: 30px;
@@ -91,4 +102,8 @@ nav ul button:hover {
 .homeCartslider .swiper-button-prev:hover::after,
 .homeCartslider .swiper-button-next:hover::after {
   color: #fff !important;
+}
+
+.homeCartslider .item:hover img {
+  transform: scale(1.1);
 }
