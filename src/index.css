@@ -117,3 +117,10 @@ top: 55% !important;
 .homeCartslider .item:hover img {
   transform: scale(1.1);
 }
+
+.MuiTabs-indicator {
+  background-color: #ff5252 !important;
+}
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #ff5252 !important;
+}
