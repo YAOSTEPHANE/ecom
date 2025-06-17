@@ -72,6 +72,16 @@ nav ul button:hover {
   font-size: 22px !important;
 }
 
+.smlBtn .swiper-button-prev, .smlBtn .swiper-button-next{
+width: 30px !important;
+height: 30px !important;
+min-width: 30px !important;
+top: 55% !important;
+}
+.smlBtn .swiper-button-prev:after, .smlBtn .swiper-button-next:after {
+  color: #000 !important;
+  font-size: 18px !important;
+}
 .homeCartslider{overflow: inherit !important;}
 .homeCartslider .swiper-button-prev,
 .homeCartslider .swiper-button-next {

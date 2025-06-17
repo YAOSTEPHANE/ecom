@@ -84,15 +84,6 @@ const CartSlider = () => {
           <Link to="/">
           <div className='item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col'>
             <img src="./src/images/OIP.webp" alt="" className='w-[60px] transition-all' />
-            <h3 className='text-[15px] font-[500] mt-3'>Bureau</h3>
-          </div>
-          </Link>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <Link to="/">
-          <div className='item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col'>
-            <img src="./src/images/OIP.webp" alt="" className='w-[60px] transition-all' />
             <h3 className='text-[15px] font-[500] mt-3'>Telephones</h3>
           </div>
           </Link>
