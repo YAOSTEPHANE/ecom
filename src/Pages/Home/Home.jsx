@@ -7,10 +7,11 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import Produits from "../../components/Produitsslider/Produits";
+import { useState } from "react";
 
 const Home = () => {
 
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -54,7 +55,7 @@ const Home = () => {
             </div>
           </div>
 
-          <Produits items={5} />
+          <Produits items={6} />
 
         </div>
       </section>
