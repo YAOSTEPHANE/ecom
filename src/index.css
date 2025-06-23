@@ -27,11 +27,16 @@ body {
   background: #fff !important;
 }
 
-
-
 .container {
   width: 95%;
   margin: auto;
+}
+.btn-org {
+  background: #ff5252 !important;
+  color: #fff !important;
+  padding: 7px 20px !important;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .link:hover {
@@ -76,17 +81,21 @@ nav ul button:hover {
   background: #ff5252 !important;
 }
 
-.smlBtn .swiper-button-prev, .smlBtn .swiper-button-next{
-width: 30px !important;
-height: 30px !important;
-min-width: 30px !important;
-top: 55% !important;
+.smlBtn .swiper-button-prev,
+.smlBtn .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  top: 55% !important;
 }
-.smlBtn .swiper-button-prev:after, .smlBtn .swiper-button-next:after {
+.smlBtn .swiper-button-prev:after,
+.smlBtn .swiper-button-next:after {
   color: #000 !important;
   font-size: 18px !important;
 }
-.homeCartslider{overflow: inherit !important;}
+.homeCartslider {
+  overflow: inherit !important;
+}
 .homeCartslider .swiper-button-prev,
 .homeCartslider .swiper-button-next {
   width: 30px;
@@ -133,4 +142,17 @@ top: 55% !important;
   padding: 15px;
   margin-left: -15px;
   margin-right: -15px;
+}
+
+.footer form input::placeholder {
+  font-size: 14px !important;
+}
+.css-imrjgg-MuiBouttonBase-root.MuiCheckbox-root.Mui-checkked,
+.css-imrjgg-MuiBouttonBase-root.MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: #ff5252 !important;
+}
+
+.MuiFormControlLabel-label {
+  color: rgba(0, 0, 0, 0.8) !important;
+  font-size: 13px !important; 
 }

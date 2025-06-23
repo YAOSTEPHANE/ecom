@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Homeslider from "../../components/HomeSlider/Homeslider";
 import CartSlider from "../../components/HomeCatSlider/CartSlider";
 import { FaShippingFast } from "react-icons/fa";
 import Publicite from "../../components/PubBannersslider/Publicite";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
 import Produits from "../../components/Produitsslider/Produits";
-import { useState } from "react";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+
+import { Navigation } from "swiper/modules";
+import BlogItem from "../../components/Blog/blog";
+import Footer from "../../components/Footer/footer";
 
 const Home = () => {
-
   const [value, setValue] = useState(0);
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -27,8 +32,7 @@ const Home = () => {
             <div className="lefSec">
               <h2 className="text-[20px] font-[600]">Produits populaires</h2>
               <p className="text-[14px] font-[400]">
-                ne manquez pas les offres en cours jusqu'à la fin du mois de
-                mars
+                Obtenez jusqu’à 50 % de réduction sur les nouveaux styles de la saison, durée limitée seulement
               </p>
             </div>
             <div className="rightSec w-[60%]">
@@ -54,13 +58,11 @@ const Home = () => {
               </Tabs>
             </div>
           </div>
-
           <Produits items={6} />
-
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-4 bg-white">
         <div className="container">
           <div className="freeShipping w-[80%] m-auto py-4 p-4 border-2 border-[#FF5252] flex items-center justify-between rounded-md mb-7">
             <div className="col1 flex items-center gap-4">
@@ -80,12 +82,61 @@ const Home = () => {
           <Publicite items={4} />
         </div>
       </section>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+
+      <section className="py-5 pt-0 bg-white">
+        <div className="container">
+          <h2 className="text-[20px] font-[600] mb-4">Nouveaux produits</h2>
+          <Produits items={6} />
+          <Publicite items={3} />
+        </div>
+      </section>
+
+      <section className="py-5 pt-0 bg-white">
+        <div className="container">
+          <h2 className="text-[20px] font-[600] mb-4">Produits en vedette</h2>
+          <Produits items={6} />
+          <Publicite items={3} />
+        </div>
+      </section>
+
+      <section className="py-5 pb-8 pt-0 bg-white blogSection ">
+        <div className="container">
+           <h2 className="text-[20px] font-[600] mb-4">Blog</h2>
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={30}
+            navigation={true}
+            modules={[Navigation]}
+            className="blogSlider"
+          >
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+          </Swiper>
+         
+          
+        </div>
+      </section>
+
+      <section className="py-5 pt-0 bg-white">
+       <Footer />
+      </section>
+      
     </>
   );
 };

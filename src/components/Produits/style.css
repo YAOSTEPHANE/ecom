@@ -2,6 +2,10 @@
     line-height: 18px;
 
 }
-.produitsArticles .action {
+.produitsArticles .actions button:hover svg{
+    color: #fff !important;
     
+}
+.produitsArticles .actions button:hover svg {
+    pointer-events: none !important;
 }
