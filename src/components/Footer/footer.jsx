@@ -193,7 +193,7 @@ const Footer = () => {
                   S’abonner
                 </Button>
                 <FormControlLabel
-                  control={<Checkbox defaultChecked />}
+                  control={<Checkbox/>}
                   label="J’accepte les termes et conditions et la politique de confidentialité"
                 />
               </form>
@@ -238,7 +238,7 @@ const Footer = () => {
                 to="/"
                 target="_blank"
               >
-                <FaLinkedin  className="text-[15px] group-hover:text-white" />
+                <FaLinkedin className="text-[15px] group-hover:text-white" />
               </Link>
             </li>
             <li className="list-none">
@@ -247,16 +247,14 @@ const Footer = () => {
                 to="/"
                 target="_blank"
               >
-                <AiFillTikTok  className="text-[15px] group-hover:text-white" />
+                <AiFillTikTok className="text-[15px] group-hover:text-white" />
               </Link>
             </li>
-
           </ul>
 
           <p className="text-[14px] text-center mb-0">
             © 2025 DigitalPro Solution. Tous droits réservés.
           </p>
-
 
           <div className="flex items-center">
             <img
@@ -265,7 +263,7 @@ const Footer = () => {
               className=""
             />
             <img
-              src="src/images/carte_bleue.png"
+              src="src/images/american_express.png"
               alt="DigitalPro Solution Logo"
               className=""
             />
