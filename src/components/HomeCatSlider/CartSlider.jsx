@@ -47,7 +47,7 @@ const CartSlider = () => {
             <Link to="/">
               <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
                 <img
-                  src="./src/images/OIP.webp"
+                  src="./src/images/file_1734525275367_well.png"
                   alt=""
                   className="w-[60px] transition-all"
                 />
@@ -60,7 +60,7 @@ const CartSlider = () => {
             <Link to="/">
               <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
                 <img
-                  src="./src/images/OIP.webp"
+                  src="./src/images/15-cz_categoryimagelist (1).jpg"
                   alt=""
                   className="w-[60px] transition-all"
                 />

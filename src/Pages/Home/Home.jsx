@@ -14,6 +14,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import BlogItem from "../../components/Blog/blog";
 import Footer from "../../components/Footer/footer";
+import HomesliderV2 from "../../components/HomeSliderV2/HomesliderV2";
 
 const Home = () => {
   const [value, setValue] = useState(0);
@@ -23,7 +24,13 @@ const Home = () => {
 
   return (
     <>
-      <Homeslider />
+      <section className="py-6">
+        <div className="container flex items-center">
+          <div className="part1 w-[75%]">
+            <HomesliderV2 />
+          </div>
+        </div>
+      </section>
       <CartSlider />
 
       <section className="bg-white py-8">
@@ -32,7 +39,8 @@ const Home = () => {
             <div className="lefSec">
               <h2 className="text-[20px] font-[600]">Produits populaires</h2>
               <p className="text-[14px] font-[400]">
-                Obtenez jusqu’à 50 % de réduction sur les nouveaux styles de la saison, durée limitée seulement
+                Obtenez jusqu’à 50 % de réduction sur les nouveaux styles de la
+                saison, durée limitée seulement
               </p>
             </div>
             <div className="rightSec w-[60%]">
@@ -101,7 +109,7 @@ const Home = () => {
 
       <section className="py-5 pb-8 pt-0 bg-white blogSection ">
         <div className="container">
-           <h2 className="text-[20px] font-[600] mb-4">Blog</h2>
+          <h2 className="text-[20px] font-[600] mb-4">Blog</h2>
           <Swiper
             slidesPerView={4}
             spaceBetween={30}
@@ -128,15 +136,12 @@ const Home = () => {
               <BlogItem />
             </SwiperSlide>
           </Swiper>
-         
-          
         </div>
       </section>
 
       <section className="py-5 pt-0 bg-white">
-       <Footer />
+        <Footer />
       </section>
-      
     </>
   );
 };
