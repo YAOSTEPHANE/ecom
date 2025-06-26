@@ -195,3 +195,6 @@ transition-duration: 2.1s;
 .MuiCheckbox-root{
   padding: 6px !important;
 }
+.ReactCollapse--collapse{
+  transition:height 500ms
+}
