@@ -13,8 +13,9 @@ import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
 import BlogItem from "../../components/Blog/blog";
-import Footer from "../../components/Footer/footer";
 import HomesliderV2 from "../../components/HomeSliderV2/HomesliderV2";
+import BannerBoxV2 from "../../components/BannerBoxV2/BannerBoxV2";
+import PubliciteV2 from "../../components/PubBannerssliderV2/PubliciteV2";
 
 const Home = () => {
   const [value, setValue] = useState(0);
@@ -24,10 +25,15 @@ const Home = () => {
 
   return (
     <>
+    <Homeslider />
       <section className="py-6">
-        <div className="container flex items-center">
+        <div className="container flex gap-5">
           <div className="part1 w-[75%]">
             <HomesliderV2 />
+          </div>
+          <div className="part2 w-[80%] flex items-center gap-2 justify-between flex-col">
+            <BannerBoxV2 info="left" image={"./src/images/sub-banner-1.jpg"} />
+            <BannerBoxV2 info="right" image={"./src/images/sub-banner-2.jpg"}  />
           </div>
         </div>
       </section>
@@ -87,7 +93,7 @@ const Home = () => {
             </div>
             <p className="font-bold text-[25px]">à partir de 1000F</p>
           </div>
-          <Publicite items={4} />
+          <PubliciteV2 items={4} />
         </div>
       </section>
 
@@ -140,7 +146,7 @@ const Home = () => {
       </section>
 
       <section className="py-5 pt-0 bg-white">
-        <Footer />
+        
       </section>
     </>
   );

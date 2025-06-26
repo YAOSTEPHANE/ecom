@@ -180,14 +180,14 @@ right: 0px !important;
 opacity: 1;
 }
 .homeSliderV2 .info h4{
-transition-duration: 2s;
+transition-duration: 1.2s;
 }
 .homeSliderV2 .info h2{
-transition-duration: 2.3s;
+transition-duration: 1.5s;
 }
 .homeSliderV2 .info h3{
-transition-duration: 3s;
+transition-duration: 1.8s;
 }
 .homeSliderV2 .info .btn_{
-transition-duration: 1s;
+transition-duration: 2.1s;
 }
