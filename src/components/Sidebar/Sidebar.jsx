@@ -6,8 +6,10 @@ import { Collapse } from "react-collapse";
 import { FaAngleDown } from "react-icons/fa6";
 import Button from "@mui/material/Button";
 import { FaAngleUp } from "react-icons/fa";
-import RangeSlider from 'react-range-slider-input';
-import 'react-range-slider-input/dist/style.css';
+import RangeSlider from "react-range-slider-input";
+import "react-range-slider-input/dist/style.css";
+import Rating from "@mui/material/Rating";
+import Stack from "@mui/material/Stack";
 
 const Sidebar = () => {
   const [isOpenCategoryFilter, SetIsOpenCategoryFilter] = useState(true);
@@ -147,12 +149,45 @@ const Sidebar = () => {
           </div>
         </Collapse>
       </div>
-      <div className="box">
+      <div className="box mt-4">
         <h3 className="w-full mb-3 text-[18px] font-[600] flex items-center pr-5">
           Filtrer par Prix
-          
         </h3>
+        <RangeSlider />
+        <div className="flex pt-4 pb-2 priceRange">
+          <span className="text-[13px]">
+            à partir de: <strong className="text-dark">{1000} Fcfa</strong>
+          </span>
+          <span className="ml-auto text-[13px]">
+            à: <strong className="text-dark">{5000} Fcfa</strong>
+          </span>
         </div>
+      </div>
+      <div className="box mt-4">
+        <h3 className="w-full mb-3 text-[18px] font-[600] flex items-center pr-5">
+          Filtrer par Mieux Notés
+        </h3>
+        <div className="w-full">
+          <Rating name="size-small"
+            defaultValue={5}
+            size="small"
+            readOnly
+          />
+          </div>
+          <div className="w-full">
+          <Rating name="size-small" defaultValue={4} size="small" readOnly />
+          </div>
+          <div className="w-full">
+          <Rating name="size-small" defaultValue={3} size="small" readOnly />
+          </div>
+          
+        <div className="w-full">
+          <Rating name="size-small" defaultValue={2} size="small" readOnly />
+          </div>
+          <div className="w-full">
+          <Rating name="size-small" defaultValue={1} size="small" readOnly />
+          </div>
+      </div>
     </aside>
   );
 };
