@@ -16,25 +16,25 @@ const Produits = (props) => {
         className="smlBtn"
       >
         <SwiperSlide className="w-full py-5">
-            <ProduitsArticles />
+          <ProduitsArticles />
         </SwiperSlide>
         <SwiperSlide className="w-full py-5">
-            <ProduitsArticles />
+          <ProduitsArticles />
         </SwiperSlide>
         <SwiperSlide className="w-full py-5">
-            <ProduitsArticles />
+          <ProduitsArticles />
         </SwiperSlide>
         <SwiperSlide className="w-full py-5">
-            <ProduitsArticles />
+          <ProduitsArticles />
         </SwiperSlide>
         <SwiperSlide className="w-full py-5">
-            <ProduitsArticles />
+          <ProduitsArticles />
         </SwiperSlide>
         <SwiperSlide className="w-full py-5">
-            <ProduitsArticles />
+          <ProduitsArticles />
         </SwiperSlide>
         <SwiperSlide className="w-full py-5">
-            <ProduitsArticles />
+          <ProduitsArticles />
         </SwiperSlide>
       </Swiper>
     </div>

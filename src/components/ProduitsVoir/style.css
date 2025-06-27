@@ -1,0 +1,11 @@
+.produitsArticles .title {
+    line-height: 18px;
+
+}
+.produitsArticles .actions button:hover svg{
+    color: #fff !important;
+    
+}
+.produitsArticles .actions button:hover svg {
+    pointer-events: none !important;
+}
