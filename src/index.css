@@ -196,5 +196,5 @@ transition-duration: 2.1s;
   padding: 6px !important;
 }
 .ReactCollapse--collapse{
-  transition:height 500ms
+  transition:height 400ms
 }
