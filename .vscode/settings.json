@@ -1,3 +1,6 @@
 {
-    "editor.defaultFormatter": "GitHub.copilot"
+    "editor.defaultFormatter": "GitHub.copilot",
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
 }

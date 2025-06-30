@@ -5,12 +5,14 @@ import Rating from "@mui/material/Rating"; // Assuming you have a CS
 import Button from "@mui/material/Button"; // Assuming you have a Button component
 import { FaRegHeart } from "react-icons/fa";
 import { MdZoomOutMap } from "react-icons/md";
+import { MdOutlineShoppingCart } from "react-icons/md";
+
 // S file for styling
 
 const produitsArticlesVoir = () => {
   return (
-    <div className="produitsArticles shadow-lg rounded-md overflow-hidden  border-1 border-[rgba(0,0,0,0.1)] shadow-md">
-      <div className="group imgWrapper w-[100%] h-[220px] overflow-hidden rounded-md relative">
+    <div className="produitsArticles shadow-lg rounded-md overflow-hidden  border-1 border-[rgba(0,0,0,0.1)] flex items-center">
+      <div className="group imgWrapper w-[25%] h-[220px] overflow-hidden rounded-md relative">
         <Link to="/" className="w-full h-full absolute top-0 left-0 z-10">
         <div className="img h-[200px] overflow-hidden">
           <img src="./src/images/mode 2.jpg" className="w-full" alt="Produit 1" />
@@ -28,17 +30,18 @@ const produitsArticlesVoir = () => {
           </div>
       </div>
 
-      <div className="info p-3 py-5">
-        <h6 className="text-[13px]">
+      <div className="info p-3 py-5 px-8 w-[75%] ">
+        <h6 className="text-[15px] font-[500]">
           <Link to="/" className="link transition-all">
             Hommes Alias-N Regulier
           </Link>
         </h6>
-        <h3 className="text-[13px] title mt-1 font-[500] mb-1 text-[#000]">
+        <h3 className="text-[18px] title mt-3 mb-3 font-[500] mb-1 text-[#000]">
           <Link to="/" className="link transition-all">
             Fit Spread Collar Shirt
           </Link>
         </h3>
+        <p className="text-[15px] mb-3">Lorem Ipsum est tout simplement un texte factice de l’industrie de l’impression et de la composition. Lorem Ipsum est le texte factice standard de l’industrie depuis les années 1500, lorsqu’un imprimeur inconnu a pris une galère de caractères et l’a brouillée pour en faire un spécimen de type book.ac</p>
         <Rating name="size-small" defaultValue={4} size="small" readOnly />
 
         <div className="flex items-center gap-4">
@@ -49,6 +52,11 @@ const produitsArticlesVoir = () => {
               1500 FCFA
             </span>
            
+        </div>
+
+        <div className="mt-3">
+        <Button className="btn-org flex gap-2"><MdOutlineShoppingCart className="text-[20px]" />Ajouter au panier </Button>
+
         </div>
       </div>
     </div>

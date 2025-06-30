@@ -10,6 +10,8 @@ import { IoGrid } from "react-icons/io5";
 import { LuLayoutList } from "react-icons/lu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
 import { useState } from "react";
 
@@ -27,7 +29,7 @@ const ListeProduits = () => {
   };
 
   return (
-    <section className="py-5">
+    <section className="py-5 pb-0">
       <div className="container">
         <Breadcrumbs aria-label="breadcrumb">
           <Link
@@ -54,17 +56,17 @@ const ListeProduits = () => {
             <Sidebar />
           </div>
 
-          <div className="rightcontent w-[80%]">
+          <div className="rightcontent w-[80%] py-3">
             <div className="bg-[#f1f1f1] p-2 w-full mb-4 rounded-md flex items-center justify-between">
-              <div className="col1 flex items-center">
+              <div className="col1 flex items-center itemViewActions">
                 <Button
-                  className="!w-[45px] !h-[45px] !min-w-[45px] !rounded-full !text-[#000]"
+                  className={`!w-[45px] !h-[45px] !min-w-[45px] !rounded-full !text-[#000] ${isItemView === "list" && "active"}`}
                   onClick={() => setIsItemView("grid")}
                 >
                   <IoGrid className="text-[rgba(0,0,0,0.7)]" />
                 </Button>
                 <Button
-                  className="!w-[45px] !h-[45px] !min-w-[45px] !rounded-full !text-[#000]"
+                  className={`!w-[45px] !h-[45px] !min-w-[45px] !rounded-full !text-[#000] ${isItemView === "grid" && "active"}`}
                   onClick={() => setIsItemView("list")}
                 >
                   <LuLayoutList className="text-[rgba(0,0,0,0.7)]" />
@@ -137,39 +139,40 @@ const ListeProduits = () => {
                 </Menu>
               </div>
             </div>
-<div
-  className={`gap-4 ${
-    isItemView === "grid"
-      ? "grid grid-cols-4 md:grid-cols-4"
-      : "flex flex-col"
-  }`}
->
-  {isItemView === "grid" ? (
-    <>
-      <ProduitsArticles isItemView={isItemView} />
-      <ProduitsArticles isItemView={isItemView} />
-      <ProduitsArticles isItemView={isItemView} />
-      <ProduitsArticles isItemView={isItemView} />
-      <ProduitsArticles isItemView={isItemView} />
-      <ProduitsArticles isItemView={isItemView} />
-      <ProduitsArticles isItemView={isItemView} />
-      <ProduitsArticles isItemView={isItemView} />
-    </>
-  ) : (
-    <>
-      <ProduitsArticlesVoir isItemView={isItemView} />
-      <ProduitsArticlesVoir isItemView={isItemView} />
-      <ProduitsArticlesVoir isItemView={isItemView} />
-      <ProduitsArticlesVoir isItemView={isItemView} />
-      <ProduitsArticlesVoir isItemView={isItemView} />
-      <ProduitsArticlesVoir isItemView={isItemView} />
-      <ProduitsArticlesVoir isItemView={isItemView} />
-      <ProduitsArticlesVoir isItemView={isItemView} />
-    </>
-  )}
-</div>
+
+            <div
+              className={`grid ${isItemView === "grid" ? "grid grid-cols-4 md:grid-cols-4" : 'grid grid-cols-1 md:grid-cols-1'
+                } gap-4`}
+            >
+              {isItemView === "grid" ? (
+                <>
+                  <ProduitsArticles isItemView={isItemView} />
+                  <ProduitsArticles isItemView={isItemView} />
+                  <ProduitsArticles isItemView={isItemView} />
+                  <ProduitsArticles isItemView={isItemView} />
+                  <ProduitsArticles isItemView={isItemView} />
+                  <ProduitsArticles isItemView={isItemView} />
+                  <ProduitsArticles isItemView={isItemView} />
+                  <ProduitsArticles isItemView={isItemView} />
+                </>
+              ) : (
+                <>
+                  <ProduitsArticlesVoir isItemView={isItemView} />
+                  <ProduitsArticlesVoir isItemView={isItemView} />
+                  <ProduitsArticlesVoir isItemView={isItemView} />
+                  <ProduitsArticlesVoir isItemView={isItemView} />
+                  <ProduitsArticlesVoir isItemView={isItemView} />
+                  <ProduitsArticlesVoir isItemView={isItemView} />
+                  <ProduitsArticlesVoir isItemView={isItemView} />
+                  <ProduitsArticlesVoir isItemView={isItemView} />
+                </>
+              )}
+            </div>
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center">
+        <Pagination count={10} showFirstButton showLastButton />
       </div>
     </section>
   );

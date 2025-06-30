@@ -37,6 +37,7 @@ const Produits = (props) => {
           <ProduitsArticles />
         </SwiperSlide>
       </Swiper>
+      
     </div>
   );
 };
