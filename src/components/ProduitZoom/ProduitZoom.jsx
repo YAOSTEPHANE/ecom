@@ -5,7 +5,7 @@ const ProduitZoom = () => {
 
     return (
         <div className='produitZoom'>
-            <InnerImageZoom zoomType='hover' zoomScale={1.5} img={"./src/images/mode 1.jpg"}
+            <InnerImageZoom zoomType='hover' zoomScale={1.5} img={'../src/images/mode 1.jpg'}
             />
         </div>
     )
