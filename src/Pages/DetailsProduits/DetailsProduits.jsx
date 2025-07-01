@@ -6,7 +6,8 @@ import ProduitZoom from "../../components/ProduitZoom/ProduitZoom";
 
 const DetailsProduits = () => {
   return (
-    <section className="py-5 pb-0">
+    <>
+      <div className="py-5">
       <div className="container">
         <Breadcrumbs aria-label="breadcrumb">
           <Link
@@ -28,13 +29,15 @@ const DetailsProduits = () => {
         </Breadcrumbs>
       </div>
 
-      <div className="container flex gap-4">
-        <div className="produitZoomContainer">
+      <section className="bg-white py-5">
+        <div className="container flex gap-4">
+        <div className="produitZoomContainer w-[40%]">
           <ProduitZoom  />
         </div>
-        <div className="produitDetails"></div>
       </div>
-    </section>
+      </section>
+    </div>
+    </>
   );
 };
 
