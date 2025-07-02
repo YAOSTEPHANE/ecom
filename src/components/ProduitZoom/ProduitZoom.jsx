@@ -20,7 +20,7 @@ const ProduitZoom = () => {
                         className='zoomProductSliderThumbs h-[500px] overflow-hidden'
                     >
                         <SwiperSlide className='item rounded-md overflow-hidden cursor-pointer group'>
-                            <img src="/src/images/oppo2.webp" className='w-full transition-all group-hover:scale-110'
+                            <img src="/src/images/pc.jpg" className='w-full transition-all group-hover:scale-110'
                             />
                         </SwiperSlide>
                         <SwiperSlide className='item rounded-md overflow-hidden cursor-pointer group'>
@@ -28,19 +28,19 @@ const ProduitZoom = () => {
                             />
                         </SwiperSlide>
                         <SwiperSlide className='item rounded-md overflow-hidden cursor-pointer group'>
-                            <img src="/src/images/oppo2.webp" className='w-full transition-all group-hover:scale-110'
+                            <img src="/src/images/casque.jpg" className='w-full transition-all group-hover:scale-110'
                             />
                         </SwiperSlide>
                         <SwiperSlide className='item rounded-md overflow-hidden cursor-pointer group'>
-                            <img src="/src/images/oppo2.webp" className='w-full transition-all group-hover:scale-110'
+                            <img src="/src/images/camera.jpg" className='w-full transition-all group-hover:scale-110'
                             />
                         </SwiperSlide>
                         <SwiperSlide className='item rounded-md overflow-hidden cursor-pointer group'>
-                            <img src="/src/images/opp3.webp" className='w-full transition-all group-hover:scale-110'
+                            <img src="/src/images/iphone.jpg" className='w-full transition-all group-hover:scale-110'
                             />
                         </SwiperSlide>
                         <SwiperSlide className='item rounded-md overflow-hidden cursor-pointer group'>
-                            <img src="/src/images/oppo2.webp" className='w-full transition-all group-hover:scale-110'
+                            <img src="/src/images/montre.jpg" className='w-full transition-all group-hover:scale-110'
                             />
                         </SwiperSlide>
 
@@ -55,23 +55,23 @@ const ProduitZoom = () => {
                         navigation={false}
                     >
                         <SwiperSlide className='item rounded-md overflow-hidden cursor-pointer group'>
-                            <InnerImageZoom zoomType='hover' zoomScale={1} src="/src/images/opp1.webp"
+                            <InnerImageZoom zoomType='hover' zoomScale={1} src="/src/images/mode 3.jpg"
                             />
                         </SwiperSlide>
                         <SwiperSlide className='item rounded-md overflow-hidden cursor-pointer group'>
-                            <InnerImageZoom zoomType='hover' zoomScale={1} src="/src/images/opp1.webp"
+                            <InnerImageZoom zoomType='hover' zoomScale={1} src="/src/images/pc.jpg"
                             />
                         </SwiperSlide>
                         <SwiperSlide className='item rounded-md overflow-hidden cursor-pointer group'>
-                            <InnerImageZoom zoomType='hover' zoomScale={1} src="/src/images/opp1.webp"
+                            <InnerImageZoom zoomType='hover' zoomScale={1} src="/src/images/pc.jpg"
                             />
                         </SwiperSlide>
                         <SwiperSlide className='item rounded-md overflow-hidden cursor-pointer group'>
-                            <InnerImageZoom zoomType='hover' zoomScale={1} src="/src/images/opp1.webp"
+                            <InnerImageZoom zoomType='hover' zoomScale={1} src="/src/images/pc.jpg"
                             />
                         </SwiperSlide>
                         <SwiperSlide className='item rounded-md overflow-hidden cursor-pointer group'>
-                            <InnerImageZoom zoomType='hover' zoomScale={1} src="/src/images/opp1.webp"
+                            <InnerImageZoom zoomType='hover' zoomScale={1} src="/src/images/pc.jpg"
                             />
                         </SwiperSlide>
                         <SwiperSlide className='item rounded-md overflow-hidden cursor-pointer group'>
