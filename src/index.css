@@ -12,7 +12,7 @@ body {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
   background: #f5f0f0;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(36, 36, 36, 1);
   overflow-x: hidden;
 }
 
@@ -211,8 +211,9 @@ transition-duration: 2.1s;
   color: #fff !important;
 }
 
-.zoomProductSliderThumbs .swiper-slide{
-  height: auto !important;
+.zoomProductSliderThumbs .swiper-wrapper{
+  padding-top: 38px !important;
+  
 
 }
 
@@ -243,4 +244,9 @@ transition-duration: 2.1s;
 .zoomProductSliderThumbs .swiper-button-next:hover:after,
 .zoomProductSliderThumbs .swiper-button-prev:hover:after{
   color: #fff !important;
+
 }
+.zoomProductSliderThumbs .swiper-slide .item{
+  opacity: 0.3;
+}
+

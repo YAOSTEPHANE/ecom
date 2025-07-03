@@ -25,7 +25,7 @@ const Home = () => {
 
   return (
     <>
-    <Homeslider />
+      {/* <Homeslider /> */}
       <section className="py-6">
         <div className="container flex gap-5">
           <div className="part1 w-[75%]">
